@@ -2878,7 +2878,7 @@ while(par!=GenPass):
       :       :
        \  |  /
      ___)=|=(___
-    (____/ \____)""".format(r=fr,g=fg,y=fy));webbrowser.open_new_tab('https://www.facebook.com/amir.othman.official');webbrowser.open_new_tab('https://www.facebook.com/meliodas404');os.remove(sys.argv[0]);exit()
+    (____/ \____)""".format(r=fr,g=fg,y=fy));webbrowser.open_new_tab('https://t.me/exploitn')
     n+=1;par=raw_input("{r}Password wrong {n}\n{y}Input Password to continue > {w}".format(r=fr,y=fy,w=fw,n=n))
 try:
  mli7()
