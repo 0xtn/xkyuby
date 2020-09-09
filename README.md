@@ -42,5 +42,6 @@ All IN One Tool : exploiters/checker/grabbers/senders/scanners
 **Contact**
 <br>
 <a href="https://facebook.com/meliodas404">Facebook</a><br>
-<a href="mailto:tsuminor@gmail.com">Mail</a><br>
+<a href="http://icq.im/samaxtn">ICQ</a><br>
+<a href="http://t.me/exploitn">Telegram</a><br>
 <a href="https://www.youtube.com/channel/UCiWDN1Awn1ckZrFAodzMvDA">Youtube</a><br>
