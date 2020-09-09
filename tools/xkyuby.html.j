@@ -1,0 +1,1 @@
+<style>body{overflow:hidden;background-color:black}#q{font:40px impact;color:white;position:absolute;left:0;right:0;top:43%}</style><title>Hacked by ARONT && ESCANOR </title><center><div id=q>./defaced by ARONTN && ESCANOR<br><br>./Defaced
