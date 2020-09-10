@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 #if you See This Comment ... I wanna Say ... Yfz :)
+#Copyright For All Coders Love YoU
 import sys,os,re,socket,binascii,json,random,base64,Queue
 import threading,Queue,pprint,urlparse,smtplib,telnetlib,os.path
 import datetime,ssl,imaplib
@@ -72,7 +73,7 @@ sn  =   Style.NORMAL
 sb  =   Style.BRIGHT
 ###
 try:
- GenPass=requests.get('https://gist.githubusercontent.com/0xtn/37ed91b591bb9f6640f5fa6e30eeb7f4/raw/6e349aa680c8efff13f8c7d6e78bf7b467399430/serr').text.encode('utf-8') #On
+ kkkkkkkkkkk=requests.get('https://github.com/0xtn').text.encode('utf-8') #On
 except:
     raw_input(fr+"{!} Check Ur Connection Broh !"+fb);exit()
 def foul():
@@ -1104,8 +1105,14 @@ class ghrab(object):
         if not os.path.isdir('results/iproxy'):
           os.mkdir('results/iproxy')
         StartIP = raw_input('%s[%s+%s] Start IP: %s'%(la7mar,la5dhar,la7mar,lazra9))
+        while not re.match('[0-9]{0,3}\d.[0-9]{0,3}\d.[0-9]{0,3}\d.[0-9]{0,3}\d',StartIP):
+          StartIP = raw_input('%s[%s+%s] Start IP: %s'%(la7mar,la5dhar,la7mar,lazra9))
         ENDIP = raw_input('%s[%s+%s] End IP: %s'%(la7mar,la5dhar,la7mar,lazra9))
+        while not re.match('[0-9]{0,3}\d.[0-9]{0,3}\d.[0-9]{0,3}\d.[0-9]{0,3}\d',ENDIP):
+          ENDIP = raw_input('%s[%s+%s] End IP: %s'%(la7mar,la5dhar,la7mar,lazra9))
         PRoxYPort = raw_input('%s[%s+%s] Enter Proxy port [8080,80]: %s'%(la7mar,la5dhar,la7mar,lazra9))
+        while not re.match('[0-9]{1,5}\d',PRoxYPort):
+          PRoxYPort = raw_input('%s[%s+%s] Enter Proxy port [8080,80]: %s'%(la7mar,la5dhar,la7mar,lazra9))
         ip_range = self.Generate_IP(StartIP, ENDIP)
         xXx=0
         for ip in ip_range:
@@ -1114,7 +1121,6 @@ class ghrab(object):
                 xX.write(str(ip) + ':' + str(PRoxYPort) + '\n')
         print "%s%s Ip Saved In 'results/iproxy/Ipgenerated.txt'"%(la5dhar,xXx)
         heroken()
-
     def Generate_IP(self, start_ip, end_ip):
         Start = list(map(int, start_ip.split(".")))
         end = list(map(int, end_ip.split(".")))
@@ -1154,7 +1160,7 @@ class transformator(object):
     X{r} ({b} 69 {r}){y} Back            {re}X
     x{r}XXXXXXXXXXXXXXXXXXXXXXXX{re}x
   """.format(r=la7mar,b=lazra9,g=la5dhar,y=lasfar,re=ramadi)
-      reponse=raw_input('{b}[{hh}{g}>>{s}{b}]{w} '.format(b=fbl,g=fg,w=fb,hh=hell,s=saker))
+      reponse=raw_input('%sm4rk%s>%s'%(la7mar,ramadi,lazra9))
   def kamel(self):
     linklistmail=[]
     print """
@@ -1177,11 +1183,10 @@ class transformator(object):
         fr = y2o.index(str(':'))
         ded = y2o[fr:]
         mod=en+ded
-        nb=nb+1
+        nb+=1
         with open('results/combos/Mod2_%s'%(linklistmail),'a') as modlis:
           modlis.write(mod.strip() + '\n')
-    print "%s Username%s Saved In 'results/combos/Mod2_%s' \033[00m"%(la5dhar,nb,linklistmail)
-    raw_input(fy+'Press Enter To Exit..'+fb);exit()
+    print "%s %s Usernames Saved In 'results/combos/Mod2_%s' \033[00m"%(la5dhar,nb,linklistmail)
   def abda(self):
     print """
   {re}
@@ -1191,7 +1196,7 @@ class transformator(object):
 
     {r}[{b}1{r}]{y} Add Random E-mails
     {r}[{b}2{r}]{y} Single Domain E-mail """.format(r=la7mar,b=lazra9,y=lasfar,re=ramadi)
-    maill=raw_input('{b}[{hh}{g}>>{s}{b}]{w} '.format(b=fbl,g=fg,w=fb,hh=hell,s=saker))
+    maill=raw_input('%sm4rk%s>%s'%(la7mar,ramadi,lazra9))
     linklistmail=raw_input("%s[%s+%s] Enter List : %s"%(la7mar,la5dhar,la7mar,lazra9))
     if maill=='1':
       yoo=[]
@@ -1214,15 +1219,11 @@ class transformator(object):
          mod=mod+ded
          with open('results/combos/Mod_%s'%(linklistmail),'a') as modlis:
           modlis.write(mod.strip() + '\n')
-      raw_input(fy+'Press Enter To Exit..'+fb);exit()
     elif maill=='2':
       soo=raw_input("%s[%s+%s] Enter Email [Like > @gmail.com] : %s"%(la7mar,la5dhar,la7mar,lazra9))
       yoo=[]
-      try: 
-        with open (linklistmail,'r') as yoo:
-          yoo=yoo.read().splitlines()
-      except:
-        print "{!} Error File";exit()
+      with open (linklistmail,'r') as yoo:
+        yoo=yoo.read().splitlines()
       for y2o in yoo:
         if '@' in str(y2o):
           pass
@@ -1232,23 +1233,25 @@ class transformator(object):
          ded = y2o[fr:]
          mod=str(ar)+str(soo)
          mod=mod+ded
-         nb=nb+1
+         nb+=1
          with open('results/combos/Mod_%s'%(linklistmail),'a') as modlis:
           modlis.write(mod.strip() + '\n')
         else:
          mod=str(ar)+str(y2o)
          mod=mod+ded
-         nb=nb+1
+         nb+=1
          with open('results/combos/Mod_%s'%(linklistmail),'a') as modlis:
           modlis.write(mod.strip() + '\n')
-      print "%s Email%s Saved In 'results/combos/Mod2_%s' \033[00m"%(la5dhar,nb,linklistmail);raw_input(fy+'Press Enter To Exit..'+fb);exit()
+      print "%s %s Emails Saved In 'results/combos/Mod2_%s' \033[00m"%(la5dhar,nb,linklistmail)
+    else:rakez()
 ##
-class EscanorSamata(object):
+class Saama(object):
   def __init__(self):
     if not os.path.isdir('results/combos'):
       os.mkdir('results/combos')
     self.yo()
-    marlin=raw_input('{b}[{hh}{g}>>{s}{b}]{w} '.format(b=fbl,g=fg,w=fb,hh=hell,s=saker))
+    rre=[]
+    marlin=raw_input('%sm4rk%s>%s'%(la7mar,ramadi,lazra9))
     if marlin in ['01','1']:
       self.combo()
     elif marlin in ['02','2']:
@@ -1259,14 +1262,12 @@ class EscanorSamata(object):
       self.email()
     elif marlin =='69':
       heroken()
-
   def yo(self):
    print """{re}
   x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
   X{y}        Multi Extractor         {re}X
   X{y}       Extact From Files :      {re}X
   X{y}    Should be .txt Or .html..   {re}X
-  X{y}    Loading ... M4rk Leecher    {re}X
   x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
   {r}({b}01{r}){y} Combo
   {r}({b}02{r}){y} Proxy
@@ -1275,138 +1276,93 @@ class EscanorSamata(object):
   {r}({b}69{r}){y} Back
  """.format(r=la7mar,b=lazra9,y=lasfar,re=ramadi)
   def combo(self):
-    nb=0
-    li=raw_input("%s[%s+%s] Enter File : %s"%(la7mar,la5dhar,la7mar,lazra9))
-    with open(li,'r') as lines:
-     lines=lines.read().splitlines()
+     nb=0
+     li=raw_input("%s[%s+%s] Enter File : %s"%(la7mar,la5dhar,la7mar,lazra9))
+     try:
+          lines=open(li,'r').read().splitlines()
+     except:print "%s{!} %s Not Founded %s"%(la7mar,li,labyadh)
      fun=open('results/combos/Combo_(%s).txt'%li,'a')
-     for line in lines:
-      bomb = line.split(' ')
-      for i in bomb:
-        if ':80' in i or ':8080' in i:
-          pass
-        if ':' in i:
+     rr=re.findall('[a-zA-Z]\w{3,14}:[a-zA-Z]\w{3,14}|[\w\.=-]+@[\w\.-]+\.[\w]{2,3}:[a-zA-Z]\w{3,14}',str(lines))
+     for i in rr:
          i=i.replace('\n','')
          fun.write(str(i)+'\n')
-         nb=nb+1
-    print "%s Combo %s Saved In 'results/combos/Combo_(%s).txt' \033[00m"%(la5dhar,nb,li)
-    raw_input(fy+'Press Enter To Exit..'+fb);exit()
+         nb+=1
+     print "%s Combo %s Saved In 'results/combos/Combo_(%s).txt' \033[00m"%(la5dhar,nb,li)
   def proxy(self):
-    nb=0
-    li=raw_input("%s[%s+%s] Enter File : %s"%(la7mar,la5dhar,la7mar,lazra9))
-    suck=[];nigga=[];sock=0;http=0
-    with open(li,'r') as lines:
-     lines=lines.read().splitlines()
+     nb=0
+     li=raw_input("%s[%s+%s] Enter File : %s"%(la7mar,la5dhar,la7mar,lazra9))
+     try:
+          lines=open(li,'r').read().splitlines()
+     except:print "%s{!} %s Not Founded %s"%(la7mar,li,labyadh)
+     sock=0;http=0
      fun=open('results/combos/HTTP_(%s).txt'%li,'a')
      fun2=open('results/combos/SOCK4-5_(%s).txt'%li,'a')
-     for line in lines:
-      bomb = line.split(' ')
-      for i in bomb:
-        if ':' in i:
-         fr = i.index(str(':'))
-         ar = i[0:fr]
-         ded = i[fr:][1:]
+     rr=re.findall('[0-9]{0,3}\d.[0-9]{0,3}\d.[0-9]{0,3}\d.[0-9]{0,3}\d:[0-9]\d{1,5}',str(lines))
+     for i in rr:
+         ded=i.split(':')
          if '80' in str(ded) or '8080' in str(ded):
-          s7i7=0
-          nigga = ar.split('.')
-          for suck in nigga:
-           if not suck.isdigit():
-            pass
-           else:
-            s7i7=s7i7+1
-          if s7i7==4:
             i=i.replace('\n','')
             fun.write(str(i)+'\n')
             http=http+1
          elif len(str(ded))==5 and (ded.isdigit()) :
-          s7i7=0
-          nigga = ar.split('.')
-          for suck in nigga:
-           if not suck.isdigit():
-            pass
-           else:
-            s7i7=s7i7+1
-          if s7i7==4:
             i=i.replace('\n','')
             fun2.write(str(i)+'\n')
             sock=sock+1
-    print "  %s[%s!%s]%s %s Proxy "%(la7mar,la5dhar,la7mar,la5dhar,(sock+http))
-    print "   %s[%s+%s]%s %s HTTP "%(la7mar,lazra9,la7mar,la5dhar,http)
-    print "   %s[%s+%s]%s %s SOCK4/5 "%(la7mar,lazra9,la7mar,la5dhar,sock)
-    print "%s~~> Saved In 'results/combos/' \033[00m"%(la5dhar,li)
-    raw_input(fy+'Press Enter To Exit..'+fb);exit()
+     print "  %s[%s!%s]%s %s Proxy "%(la7mar,la5dhar,la7mar,la5dhar,(sock+http))
+     print "   %s[%s+%s]%s %s HTTP "%(la7mar,lazra9,la7mar,la5dhar,http)
+     print "   %s[%s+%s]%s %s SOCK4/5 "%(la7mar,lazra9,la7mar,la5dhar,sock)
+     print "%s~~> Saved In 'results/combos/' \033[00m"%(la5dhar,li)
   def zouj(self):
-    li=raw_input("%s[%s+%s] Enter File : %s"%(la7mar,la5dhar,la7mar,lazra9))
-    nb=0
-    suck=[];nigga=[];sock=0;http=0
-    with open(li,'r') as lines:
-     lines=lines.read().splitlines()
+     li=raw_input("%s[%s+%s] Enter File : %s"%(la7mar,la5dhar,la7mar,lazra9))
+     try:
+          lines=open(li,'r').read().splitlines()
+     except:print "%s{!} %s Not Founded %s"%(la7mar,li,labyadh)
+     nb=0;sock=0;http=0
      fun=open('results/combos/HTTP_(%s).txt'%li,'a')
      fun2=open('results/combos/SOCK4-5_(%s).txt'%li,'a')
      fun3=open('results/combos/Combo_(%s).txt'%li,'a')
-     for line in lines:
-      bomb = line.split(' ')
-      for i in bomb:
-        if ':' in i:
-         fr = i.index(str(':'))
-         ar = i[0:fr]
-         ded = i[fr:][1:]
+     for line in lines:     
+      rr=re.findall('[0-9]{0,3}\d.[0-9]{0,3}\d.[0-9]{0,3}\d.[0-9]{0,3}\d:[0-9]\d{1,5}',lines)
+      for i in rr:
+         ded=i.split(':')
          if '80' in str(ded) or '8080' in str(ded):
-          s7i7=0
-          nigga = ar.split('.')
-          for suck in nigga:
-           if not suck.isdigit():
-            pass
-           else:
-            s7i7=s7i7+1
-          if s7i7==4:
             i=i.replace('\n','')
             fun.write(str(i)+'\n')
             http=http+1
          elif len(str(ded))==5 and (ded.isdigit()) :
-          s7i7=0
-          nigga = ar.split('.')
-          for suck in nigga:
-           if not suck.isdigit():
-            pass
-           else:
-            s7i7=s7i7+1
-          if s7i7==4:
             i=i.replace('\n','')
             fun2.write(str(i)+'\n')
             sock=sock+1
-         else:
-          if ':' in i:
-           i=i.replace('\n','')
-           fun3.write(str(i)+'\n')
-           nb=nb+1
-    print "  %s[%s!%s]%s %s Combos "%(la7mar,la5dhar,la7mar,la5dhar,nb)
-    print "  %s[%s!%s]%s %s Proxy "%(la7mar,la5dhar,la7mar,la5dhar,(sock+http))
-    print "    %s[%s+%s]%s %s HTTP "%(la7mar,lazra9,la7mar,la5dhar,http)
-    print "    %s[%s+%s]%s %s SOCK "%(la7mar,lazra9,la7mar,la5dhar,sock)
-    print "%s~~> Saved In 'results/combos/' \033[00m"%(la5dhar)
-    raw_input(fy+'Press Enter To Exit..'+fb);exit()
-  def email(self):
-    nb=0
-    li=raw_input("%s[%s+%s] Enter File : %s"%(la7mar,la5dhar,la7mar,lazra9))
-    with open(li,'r') as lines:
-     lines=lines.read().splitlines()
-     fun=open('results/combos/emails(%s).txt'%li,'a')
-     for line in lines:
-      bomb = line.split(' ')
-      for i in bomb:
-        if '@' in i:
+      rre=re.findall('[a-zA-Z]\w{3,14}:[a-zA-Z]\w{3,14}|[\w\.=-]+@[\w\.-]+\.[\w]{2,3}:[a-zA-Z]\w{3,14}',str(lines))
+      for i in rre:
          i=i.replace('\n','')
          fun.write(str(i)+'\n')
-         nb=nb+1
-    print "%s Email %s Saved In 'results/combos/emails(%s).txt' \033[00m"%(la5dhar,nb,li)
+         nb+=1
+     print "  %s[%s!%s]%s %s Combos "%(la7mar,la5dhar,la7mar,la5dhar,nb)
+     print "  %s[%s!%s]%s %s Proxy "%(la7mar,la5dhar,la7mar,la5dhar,(sock+http))
+     print "    %s[%s+%s]%s %s HTTP "%(la7mar,lazra9,la7mar,la5dhar,http)
+     print "    %s[%s+%s]%s %s SOCK "%(la7mar,lazra9,la7mar,la5dhar,sock)
+     print "%s~~> Saved In 'results/combos/' \033[00m"%(la5dhar)
+  def email(self):
+     nb=0
+     li=raw_input("%s[%s+%s] Enter File : %s"%(la7mar,la5dhar,la7mar,lazra9))
+     try:
+          lines=open(li,'r').read().splitlines()
+     except:print "%s{!} %s Not Founded %s"%(la7mar,li,labyadh)
+     fun=open('results/combos/emails(%s).txt'%li,'a')
+     for line in lines:
+      rre=re.findall('[\w\.=-]+@[\w\.-]+\.[\w]{2,3}',str(lines))
+      for i in rre:
+         i=i.replace('\n','')
+         fun.write(str(i)+'\n')
+         nb+=1
+     print "%s Email %s Saved In 'results/combos/emails(%s).txt' \033[00m"%(la5dhar,nb,li)
 
 ##
 class skykeyz():
   def __init__(self):
     if not os.path.isdir('results/keywords'):
           os.mkdir('results/keywords')
-
     print """  {re}
   x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
   X{y} {r}({b} 01 {r}){y} Make keywords From self {re}X
@@ -1414,7 +1370,7 @@ class skykeyz():
   X{y} {r}({b} 69 {r}){y} Back                    {re}X
   x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
  """.format(r=la7mar,b=lazra9,y=lasfar,re=ramadi)
-    dream=raw_input('{b}[{hh}{g}>>{s}{b}]{w} '.format(b=fbl,g=fg,w=fb,hh=hell,s=saker))
+    dream=raw_input('%sm4rk%s>%s'%(la7mar,ramadi,lazra9))
     if dream in ['01','1']:
       self.mello()
     elif dream in ['02','2']:
@@ -1422,45 +1378,44 @@ class skykeyz():
     elif dream =='69':
       heroken()
   def keyw(self):
-     print ("""
-  1) Social
-  2) Gaming""")
-     sebsi=raw_input('{b}[{hh}{g}>>{s}{b}]{w} '.format(b=fbl,g=fg,w=fb,hh=hell,s=saker))
-     if sebsi ==('1'):
-       print ("Your results Will Be Saved ")
-
+     print """  {re}
+  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
+  X{y} {r}({b} 01 {r}){y} Social {re}X
+  X{y} {r}({b} 02 {r}){y} Gaming        {re}X
+  X{y} {r}({b} 69 {r}){y} Back                    {re}X
+  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
+ """.format(r=la7mar,b=lazra9,y=lasfar,re=ramadi)
+     sebsi=raw_input('%sm4rk%s>%s'%(la7mar,ramadi,lazra9))
+     if sebsi =='1':
+       print "Your results Will Be Saved "
        for x in social:
         for y in geek3:
-         side = x+(' ')+y
+         side = "%s %s"%(x,y)
          for z in geek4:
-          dark = side+(' ')+z
+          dark = "%s %s"%(side,z)
           darkside=open('results/keywords/keycom1.txt','a')
           darkside.write(dark+'\n')
-
-     if sebsi ==('2'):
-       print ("Your results Will Be Saved ")
-
+     if sebsi =='2':
+       print "Your results Will Be Saved "
        for x in game:
         for y in geek1:
-         side= x+(' ')+y
+         side= "%s %s"%(x,y)
          for z in geek2:
-          dark = side+(' ')+z
+          dark = "%s %s"%(side,z)
           darkside=open('results/keywords/keycom2.txt','a')
           darkside.write(dark+'\n')
-
   def mello(self):
       fly =raw_input("%s[%s+%s] First Word > %s"%(la7mar,la5dhar,la7mar,lazra9))
       fly1=raw_input("%s[%s+%s] Enter Targets Of Words > %s"%(la7mar,la5dhar,la7mar,lazra9))
       try:
-        lovu=open(fly1,'r')
-      except:
-        print "{!} Error File";exit()
+          lovu=open(fly1,'r').read().splitlines()
+      except:print "%s{!} %s Not Founded %s"%(la7mar,fly1,labyadh)
       for z in lovu:
-       side = fly+(' ')+z
+       side = "%s %s"%(side,z)
        dark = side.strip()
        darkside=open('results/keywords/makey.txt','a')
        darkside.write(dark+'\n')
-      raw_input(fy+'Press Enter To Exit..'+fb);exit()
+
 ####### Clear Terminal/cmd #######
 def clear():
   if os.name == 'nt':
@@ -2040,11 +1995,11 @@ class allforone(object):
     self.logo()
     try:
      ignite=raw_input("%s[%s+%s] Enter list : %s"%(la7mar,la5dhar,la7mar,lazra9))
-    except KeyboardInterrupt:
-      heroken()
+    except :
+      print "%s{!} %s Not Founded %s"%(la7mar,li,labyadh)
     try:
       self.oneforall(ignite)
-    except KeyboardInterrupt:
+    except :
       heroken()
   def fight(self, x,user):
     print "  %s[%s+%s]%s %s Founded !! "%(la7mar,lazra9,la7mar,la5dhar,x)
@@ -2054,10 +2009,7 @@ class allforone(object):
     print "  %s[%s!%s]%s %s not In Any SM "%(lazra9,la7mar,lazra9,la5dhar,str(user))
   def oneforall(self,ignite):
     with open(ignite,'r') as dark:
-     try:
-        arigato=dark.read().splitlines()
-     except:
-        print "{!} Error File";exit()
+     arigato=dark.read().splitlines()
      x=open('results/SChcked/SocialLinks.txt','a')
      for user in arigato:
       if ':' in str(user) or '@' in str(user):
@@ -2124,8 +2076,6 @@ class allforone(object):
       if Bg==0:
         self.peace(user)
         x.write("Result: 0\n")
-      x.write("------Thnx To Franxx Tool------\n")
-      raw_input(fy+'Press Enter To Exit..'+fb);exit()
   def logo(self):
     print """{re}
   x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
@@ -2148,57 +2098,84 @@ class allforone(object):
 class heroken(object):
   def __init__(self):
       self.logo()
-      msf=str(raw_input('{b}[{hh}{g}>>{s}{b}]{w} '.format(b=fbl,g=fg,w=fb,hh=hell,s=saker)))
+      msf=str(raw_input('%sm4rk%s>%s'%(la7mar,ramadi,lazra9)))
       if msf in ['01','1']:
         self.comed()
+        rakez()
       elif msf in ['02','2']:
         self.rm_spc()
         self.rm_dup()
+        rakez()
       elif msf in ['03','3']:
         self.extrer()
+        rakez()
       elif msf in ['04','4']:
-        EscanorSamata()
+        self.filtmail()
+        rakez()
       elif msf in ['05','5']:
-        skykeyz()
+        ghrab()
+        rakez()
       elif msf in ['06','6']:
-        self.nojetsu()
+        roxycheck()
+        rakez()
       elif msf in ['07','7']:
-        transformator()
+        Saama()
+        rakez()
       elif msf in ['08','8']:
+        zeroeye()
+        rakez()
+      elif msf in ['09','9']:
+        if not os.path.isdir('xsmash'):
+          if os.name =='nt':
+            print """Yo Bro !! U Have WinShit's Os .. If U use this Tool :
+            \r1) Install Python2.7 From https://www.python.org/downloads/
+2) Go To https://github.com/m4rktn/xsmash And Download In ".zip" Format
+3) Extract xsmash-master.zip
+4) Just Click In Xsmash.py
+ \r Ps : Go To Youtube And See How To run Python 2.7y"""
+          else:
+            os.system('git clone https://github.com/m4rktn/xsmash && cd xsmash && python2 xsmash.py')
+        else:
+          os.system('cd xsmash && python2 xsmash.py')
+      elif msf =='10':
+        skykeyz()
+        rakez()
+      elif msf=='11':
+        self.nojetsu()
+        rakez()
+      elif msf=='12':
+        ccSama()
+        rakez()
+      elif msf=='13':
+        allforone()
+        rakez()
+      elif msf=='14':
+        transformator()
+        rakez()
+      elif msf=='15':
         self.tedit()
-  def logo(self):
-    #~~Franxx's Logo~~#
-   print """{bl}
-  {re}x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x  
-  X{r}( {b}01 {r}){y}  Make Combo                        {re}X
-  X{r}( {b}02 {r}){y}  Remove Dupliques and spaces       {re}X
-  X{r}( {b}03 {r}){y}  Extract (Emails/users) & passwords{re}X
-  X{r}( {b}04 {r}){y}  Multi Extractor(Combo/Proxy/EMail){re}X
-  X{r}( {b}05 {r}){y}  Keyword List Maker                {re}X
-  X{r}( {b}06 {r}){y}  Grab List With `n` Lines          {re}X
-  X{r}( {b}07 {r}){y}  Exchanger(user <=> email)         {re}X
-  X{r}( {b}08 {r}){y}  HTTP/HTTPS ListEditor             {re}X
-  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
-  """.format(r=la7mar,b=lazra9,g=la5dhar,y=lasfar,re=ramadi,m=movv,c=cyan,bl=blid)   
   def comed(self):
+    nb=0
     try:
-      user1 =raw_input("%s[%s+%s] Enter userlist : %s"%(la7mar,la5dhar,la7mar,lazra9))
-      with open(user1,'r') as zackk:
-        zack=zackk.read().splitlines()
-      pass2 =raw_input("%s[%s+%s] Enter passlist : %s"%(la7mar,la5dhar,la7mar,lazra9))
-      with open(pass2,'r') as zackkk:
-        zack2=zackkk.read().splitlines()
+          user1 =raw_input("%s[%s+%s] Enter userlist : %s"%(la7mar,la5dhar,la7mar,lazra9))
+          try:
+            zack=open(user1,'r').read().splitlines()
+          except:
+            print "%s{!} %s Not Founded %s"%(la7mar,user1,labyadh)
+          pass2 =raw_input("%s[%s+%s] Enter passlist : %s"%(la7mar,la5dhar,la7mar,lazra9))
+          try:
+            zack2=open(pass2,'r').read().splitlines()
+          except:
+            print "%s{!} %s Not Founded %s"%(la7mar,pass2,labyadh)  
     except:
       rakez()
-    try: 
-      for z in zack:
-         for y in zack2:
-          zz  = z+(':')+y
+    try:
+      for ii,z in enumerate(zack): 
+          zz  = z+(':')+zack2[ii]
           zz0=open('results/combos/combo.txt','a')
           zz0.write(zz+'\n')
-          nb=nb+1
+          nb+=1
       print "%sYour List(%s Lines) Saved In 'results/combos' "%(la5dhar,nb)
-      raw_input(fy+'Press Enter To Exit..'+fb);exit()
     except:
        pass
   def rm_spc(self):
@@ -2206,9 +2183,9 @@ class heroken(object):
           os.mkdir('results/combos')
    zaw =raw_input("%s[%s+%s] Enter list : %s"%(la7mar,la5dhar,la7mar,lazra9))
    try:
-    comboo=open(zaw,'r')
+            comboo=open(zaw,'r').read().splitlines()
    except:
-    print "{!} Error File";exit()
+            print "%s{!} %s Not Founded %s"%(la7mar,zaw,labyadh)       
    for z in comboo:
      mark ="".join(re.split("\s+",str(z), flags=re.UNICODE))
      zz0=open('results/combos/comboa.txt','a')
@@ -2221,130 +2198,35 @@ class heroken(object):
          comboa.writelines(set(uniqlines))
         os.remove('results/combos/comboa.txt')
    combo2o=[]
-   with open('results/combos/_combo.txt','r') as combo2o:
+   with open('results/combos/_combo.txt') as combo2o:
     for i in combo2o:
-     nb_rm+=1
+     nb_rm=nb_rm+1
    print "%sYour List(%s Lines) Saved In 'results/combos/_combo.txt' "%(la5dhar,nb_rm)
-   raw_input(fy+'Press Enter To Exit..'+fb);exit()
   def extrer(self):
      nb=0
      if not os.path.isdir('results/combos'):
           os.mkdir('results/combos')
      user1 =raw_input("%s[%s+%s] Enter List Combo : %s"%(la7mar,la5dhar,la7mar,lazra9))
      try:
-        zack = open(user1,'r')
+            zack=open(user1,'r').read().splitlines()
      except:
-        print "{!} Error File";exit()
+            print "%s{!} %s Not Founded %s"%(la7mar,user1,labyadh)
      for z in zack:
-       try:
-         fr = z.index(':')
-         ar = z[0:fr]
-         ded = z[fr:]
-         de  = ded[1:]
-         arlis=open('results/combos/emails.txt','a')
-         arlis.write(ar.strip() + '\n')
-         delis=open('results/combos/pass.txt','a')
-         delis.write(de.strip() + '\n')
-         nb=nb+1
-       except:
-        pass
+       fr = z.index(':')
+       ar = z[0:fr]
+       ded = z[fr:]
+       de  = ded[1:]
+       arlis=open('results/combos/emails.txt','a')
+       arlis.write(ar.strip() + '\n')
+       delis=open('results/combos/pass.txt','a')
+       delis.write(de.strip() + '\n')
+       nb+=1
      print "%sYour List(%s Lines) Saved In 'results/combos' "%(la5dhar,nb)
-     raw_input(fy+'Press Enter To Exit..'+fb);exit()
-  
-  def sajel(self, ii,j,fiileout):
-   doct='results/Listgrouped/%s/disco%s.txt'%(fiileout,str(j))
-   toka=open(doct,'a')
-   toka.write(ii+'\n')
-  def nojetsu(self):
-   if not os.path.isdir('results/Listgrouped'):
-    os.mkdir('results/Listgrouped')
-   print """
-  {re}
-  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
-  X{y}   Kage Benchinn No Jetsu   {re}X
-  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
-  """.format(r=la7mar,y=lasfar,re=ramadi)
-   fiile=raw_input("%s[%s+%s] Enter list : %s"%(la7mar,la5dhar,la7mar,lazra9))
-   fiileout=raw_input("%s[%s+%s] Enter Name of Dictory To Output : %s"%(la7mar,la5dhar,la7mar,lazra9))
-   while len(fiileout) ==0:
-    fiileout=raw_input("%s[%s+%s] Enter Name of Dictory To Output : %s"%(la7mar,la5dhar,la7mar,lazra9))
-   os.mkdir('results/Listgrouped/'+str(fiileout))
-   try:
-    with open(fiile,'r') as openfiile:
-     yoo = openfiile.read().splitlines()
-   except:
-    print "{!} Error File";exit()
-   fillro=raw_input("%s[%s+%s] Number Lines : %s"%(la7mar,la5dhar,la7mar,lazra9))
-   i=1
-   j=1
-   for ii in yoo:
-    if i==int(fillro):
-        i=1
-        self.sajel(ii,j,fiileout)
-        j=j+1
-    else:
-        self.sajel(ii,j,fiileout)
-        i=i+1
-   print "%sYou Have %s Files In 'results/Listgrouped/%s' \033[00m"%(la5dhar,j,fiileout)
-   raw_input(fy+'Press Enter To Exit..'+fb);exit()
-  def tedit(self):
-   if not os.path.isdir('results/Sites'):
-    os.mkdir('results/Sites')
-   print """
-  {re}
-  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
-  X{y}    HTTP - HTTPs - NoHttp   {re}X
-  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
-    x{r}XXXXXXXXXXXXXXXXXXXXXXXX{re}x
-    X{r} ({b} 01 {r}){y} Add HTTP        {re}X
-    X{r} ({b} 02 {r}){y} Remove HTTP(s)  {re}X
-    X{r} ({b} 03 {r}){y} Cleaner         {re}X
-    X{r} ({b} 69 {r}){y} Back            {re}X
-    x{r}XXXXXXXXXXXXXXXXXXXXXXXX{re}x
-  """.format(r=la7mar,y=lasfar,re=ramadi,b=lazra9)
-   mayar=raw_input('{b}[{hh}{g}>>{s}{b}]{w} '.format(b=fbl,g=fg,w=fb,hh=hell,s=saker))
-   if not mayar in ['1','01','2','02','3','03','69']:
-    rakez()
-    pass
-   fiile=raw_input("%s[%s+%s] Enter list : %s"%(la7mar,la5dhar,la7mar,lazra9))
-   try:
-     with open(fiile,'r') as openfiile:
-      yoo = openfiile.read().splitlines()
-   except:
-    print "{!} Error File";exit()
-   if mayar in ['1','01']:
-    for i in yoo:
-      if not i.startswith("http://") or i.startswith("https://"):
-        with open("results/Sites/(%s).txt"%fiile,'a') as aaa:
-          aaa.write('http://%s\n'%i)
-      else:
-        with open("results/Sites/(%s).txt"%fiile,'a') as aaa:
-          aaa.write(i)
-   elif mayar in['2','02']:
-    for i in yoo:
-      if i.startswith("http://") or i.startswith("https://"):
-        i=i.lower()
-        i=i.replace("http://","");i=i.replace("https://","")
-        with open("results/Sites/(%s).txt"%fiile,'a') as aaa:
-          aaa.write('http://%s\n'%i)
-      else:
-        with open("results/Sites/(%s).txt"%fiile,'a') as aaa:
-          aaa.write(i)
-   elif mayar=='3':
-    for i in yoo:
-      zz=i.split("");
-      for ii in zz:
-        i=i.lower()
-        i=i.replace("http://","");i=i.replace("https://","")
-        with open("results/Sites/(%s).txt"%fiile) as aaa:
-          aaa.write('http://'+i.split("/")[0])
-   elif mayar=='69':
-    heroken()
-def fitromailon(x, y):
+  def fitromailon(self, x, y):
     if x!=0 :
       print "   %s[%s+%s]%s %s : %s"%(la7mar,lazra9,la7mar,la5dhar,y,x)
 
-def filtmail():
+  def filtmail(self):
    nb=0
    notmail=0
    Yahoo=0
@@ -2359,10 +2241,9 @@ def filtmail():
    orangefr=0
    yandex=0
    gmx=0
-   icloud=0
-   TunisienShitt=0
    aol=0
    freefr=0
+   icloud=0
    rambler=0
    citromailhu=0
    cncom=0
@@ -2374,64 +2255,55 @@ def filtmail():
    onet=0
    vp=0
    other=0
-   print """{r}
-  __ _ _ _             ___  ___      _ _ 
- / _(_) | |            |  \/  |     (_) |
-| |_ _| | |_ _ __ ___  | .  . | __ _ _| |
-|  _| | | __| '__/ _ \ | |\/| |/ _` | | |
-| | | | | |_| | |  __/ | |  | | (_| | | |
-|_| |_|_|\__|_|  \___| \_|  |_/\__,_|_|_|
-                                         
-                           {g} ~~Escanor~~
-
-   """.format(r=fr,g=fg)
    burn =str(raw_input("%s[%s+%s] Enter list : %s"%(la7mar,la5dhar,la7mar,lazra9)))
+   try:
+            file=open(burn,'r').read().splitlines()
+   except:
+            print "%s{!} %s Not Founded %s"%(la7mar,burn,labyadh)         
    if not os.path.isdir('results/filtres'):
     os.mkdir('results/filtres')
-   with open(burn, 'r') as earth:
-      file = earth.read().splitlines()
    for fade in file:
     fade=fade.lower()
-    nb=nb+1
+    nb+=1
     try:
-     if '@' not in str(fade):
-        notmail=notmail+1
+     if not re.match("[\w\.=-]+@[\w\.-]+\.[\w]{2,3}",fade):
+        notmail+=1
      elif '@yahoo.' in str(fade):
-        Yahoo=Yahoo+1
+        Yahoo+=1
         zzz=open('results/filtres/yahoo.txt','a')
         zzz.write(fade+'\n')
      elif '@mail.ru' in str(fade):
-        Mailru=Mailru+1
+        Mailru+=1
      elif  '@inbox.ru' in str(fade):
-        inboxru=inboxru+1
+        inboxru+=1
         zzz=open('results/filtres/inbox.ru.txt','a')
         zzz.write(fade+'\n')
      elif  '@bk.ru' in str(fade):
-        bkru=bkru+1
+        bkru+=1
         zzz=open('results/filtres/bk.ru.txt','a')
         zzz.write(fade+'\n')
      elif  '@hotmail' in str(fade):
-        hotmail=hotmail+1
+        hotmail+=1
         zzz=open('results/filtres/hotmail.txt','a')
         zzz.write(fade+'\n')
      elif  '@live' in str(fade):
-        live=live+1
+        live+=1
         zzz=open('results/filtres/live.txt','a')
         zzz.write(fade+'\n')
      elif  '@outlook' in str(fade):
-        outlook=outlook+1
+        outlook+=1
         zzz=open('results/filtres/outlook.txt','a')
         zzz.write(fade+'\n')
      elif '@seznam.cz' in str(fade):
-        seznamcz=seznamcz+1
+        seznamcz+=1
         zzz=open('results/filtres/seznam.cz.txt','a')
         zzz.write(fade+'\n')
      elif '@gmail.com' in str(fade):
-        gmail=gmail+1
+        gmail+=1
         zzz=open('results/filtres/gmail.com.txt','a')
         zzz.write(fade+'\n')
      elif '@orange.' in str(fade):
-        orangefr=orangefr+1
+        orangefr+=1
         zzz=open('results/filtres/orange.fr.txt','a')
         zzz.write(fade+'\n')
      elif '@yandex.' in str(fade):
@@ -2439,102 +2311,217 @@ def filtmail():
         zzz=open('results/filtres/yandex.txt','a')
         zzz.write(fade+'\n')
      elif '@gmx.' in str(fade):
-        gmx=gmx+1
+        gmx+=1
         zzz=open('results/filtres/gmx.txt','a')
         zzz.write(fade+'\n')
-     elif '.tn' in str(fade):
-        TunisienShitt=TunisienShitt+1
-        zzz=open('results/filtres/tona.txt','a')
-        zzz.write(fade+'\n')
      elif '@aol.' in str(fade):
-        aol=aol+1
+        aol+=1
         zzz=open('results/filtres/aol.txt','a')
         zzz.write(fade+'\n')
      elif '@free.fr' in str(fade):
-        freefr=freefr+1
+        freefr+=1
         zzz=open('results/filtres/free.fr.txt','a')
         zzz.write(fade+'\n')
      elif '@rambler.' in str(fade):
-        rambler=rambler+1
+        rambler+=1
         zzz=open('results/filtres/rambler.txt','a')
         zzz.write(fade+'\n')
      elif '@citromail.hu' in str(fade):
-        citromailhu=citromailhu+1
+        citromailhu+=1
         zzz=open('results/filtres/citromail.txt','a')
         zzz.write(fade+'\n')
      elif '@21cn.com' in str(fade):
-        cncom=cncom+1
+        cncom+=1
         zzz=open('results/filtres/21cn.com.txt','a')
         zzz.write(fade+'\n')
      elif '@freenet.de' in str(fade):
-        Freenetde=Freenetde+1
+        Freenetde+=1
         zzz=open('results/filtres/freenet.de.txt','a')
         zzz.write(fade+'\n')
      elif '@freemail.hu' in str(fade):
-        freemailhu=freemailhu+1
+        freemailhu+=1
         zzz=open('results/filtres/freemail.hu.txt','a')
         zzz.write(fade+'\n')
      elif '@abv.bg' in str(fade):
-        abv=abv+1
+        abv+=1
         zzz=open('results/filtres/abv.bg.txt','a')
         zzz.write(fade+'\n')
-     elif '@icloud' in str(fade):
-        icloud=icloud+1
-        zzz=open('results/filtres/icloud.txt','a')
-        zzz.write(fade+'\n')
      elif '@t-online.de' in str(fade):
-        tonlinede=tonlinede+1
+        tonlinede+=1
         zzz=open('results/filtres/t.online.txt','a')
         zzz.write(fade+'\n')
+     elif '@icloud' in str(fade):
+        icloud+=1
+        zzz=open('results/filtres/icloud.txt','a')
+        zzz.write(fade+'\n')
      elif '@op.' in str(fade):
-        op=op+1
+        op+=1
         zzz=open('results/filtres/op.txt','a')
         zzz.write(fade+'\n')
      elif '@onet.' in str(fade):
-        onet=onet+1
+        onet+=1
         zzz=open('results/filtres/onet.txt','a')
         zzz.write(fade+'\n')
      elif '@vp' in str(fade):
-        vp=vp+1
+        vp+=1
         zzz=open('results/filtres/vp.txt','a')
         zzz.write(fade+'\n')
      else:
-        other=other+1
+        other+=1
         zzz=open('results/filtres/other.txt','a')
         zzz.write(fade+'\n')
     except:
             pass
    nouwa=Yahoo+Mailru+inboxru+bkru+hotmail+live+outlook+seznamcz+gmail+orangefr+yandex+gmx+TunisienShitt+aol+freefr+rambler+citromailhu+cncom+Freenetde+freemailhu+abv+tonlinede+op+onet+vp+other
    print"%s   [%s+%s] %sTotal Emails : %s"%(la7mar,lazra9,la7mar,la5dhar,nouwa)
-   fitromailon(Yahoo, 'Yahoo')
-   fitromailon(Mailru, 'Mail.ru')
-   fitromailon(inboxru, 'Inbox.ru')
-   fitromailon(bkru, 'bk.ru')
-   fitromailon(hotmail, 'Hotmail')
-   fitromailon(live, 'Live')
-   fitromailon(outlook, 'Outlook')
-   fitromailon(seznamcz, 'seznam.cz')
-   fitromailon(gmail, 'Gmail')
-   fitromailon(icloud, 'Icloud')
-   fitromailon(orangefr, 'Orange.fr')
-   fitromailon(yandex, 'Yandex')
-   fitromailon(gmx, 'Gmx')
-   fitromailon(TunisienShitt, 'Tunisien Shits')
-   fitromailon(aol, 'Aol')
-   fitromailon(freefr, 'Free.fr')
-   fitromailon(citromailhu,'citromailhu')
-   fitromailon(rambler, 'Rambler')
-   fitromailon(cncom, '21cn.com')
-   fitromailon(Freenetde, 'Freenetde')
-   fitromailon(freemailhu, 'Freemail.hu')
-   fitromailon(abv, 'Abv.bg')
-   fitromailon(tonlinede, 'T-online.de')
-   fitromailon(op, 'op')
-   fitromailon(onet, 'Onet')
-   fitromailon(vp, 'Vp')
-   fitromailon(other, 'Speciel Domains')
-   fitromailon(notmail, 'Not E-Mail')
-   raw_input(fy+'Press Enter To Exit..'+fb);exit()
+   self.fitromailon(Yahoo, 'Yahoo')
+   self.fitromailon(Mailru, 'Mail.ru')
+   self.fitromailon(inboxru, 'Inbox.ru')
+   self.fitromailon(bkru, 'bk.ru')
+   self.fitromailon(hotmail, 'Hotmail')
+   self.fitromailon(live, 'Live')
+   self.fitromailon(outlook, 'Outlook')
+   self.fitromailon(seznamcz, 'seznam.cz')
+   self.fitromailon(gmail, 'Gmail')
+   self.fitromailon(orangefr, 'Orange.fr')
+   self.fitromailon(yandex, 'Yandex')
+   self.fitromailon(gmx, 'Gmx')
+   self.fitromailon(aol, 'Aol')
+   self.fitromailon(freefr, 'Free.fr')
+   self.fitromailon(citromailhu,'citromailhu')
+   self.fitromailon(rambler, 'Rambler')
+   self.fitromailon(cncom, '21cn.com')
+   self.fitromailon(Freenetde, 'Freenetde')
+   self.fitromailon(icloud, 'icloud')
+   self.fitromailon(freemailhu, 'Freemail.hu')
+   self.fitromailon(abv, 'Abv.bg')
+   self.fitromailon(tonlinede, 'T-online.de')
+   self.fitromailon(op, 'op')
+   self.fitromailon(onet, 'Onet')
+   self.fitromailon(vp, 'Vp')
+   self.fitromailon(other, 'Speciel Domains')
+   self.fitromailon(notmail, 'Not E-Mail')
+  def sajel(self, ii,j,fiileout):
+   doct='results/Listgrouped/%s/disco%s.txt'%(fiileout,str(j))
+   toka=open(doct,'a')
+   toka.write(ii+'\n')
+  def nojetsu(self):
+   if not os.path.isdir('results/Listgrouped'):
+    os.mkdir('results/Listgrouped')
+   print """
+  {re}
+  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
+  X{y}   Kage Benchinn No Jetsu   {re}X
+  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
+  """.format(r=la7mar,y=lasfar,re=ramadi)
+   fiile=raw_input("%s[%s+%s] Enter list : %s"%(la7mar,la5dhar,la7mar,lazra9))
+   try:
+            yoo=open(fiile,'r').read().splitlines()
+   except:
+            print "%s{!} %s Not Founded %s"%(la7mar,fiile,labyadh)
+   fiileout=raw_input("%s[%s+%s] Enter Name of Dictory To Output : %s"%(la7mar,la5dhar,la7mar,lazra9))
+   while len(fiileout) ==0:
+    fiileout=raw_input("%s[%s+%s] Enter Name of Dictory To Output : %s"%(la7mar,la5dhar,la7mar,lazra9))
+   os.mkdir('results/Listgrouped/'+str(fiileout))
+   fillro=raw_input("%s[%s+%s] Number Lines : %s"%(la7mar,la5dhar,la7mar,lazra9))
+   i=1
+   j=1
+   for ii in yoo:
+    if i==int(fillro):
+        i=1
+        self.sajel(ii,j,fiileout)
+        j=j+1
+    else:
+        self.sajel(ii,j,fiileout)
+        i=i+1
+   print "%sYou Have %s Files In 'results/Listgrouped/%s' \033[00m"%(la5dhar,j,fiileout)
+  def tedit(self):
+   if not os.path.isdir('results/Sites'):
+    os.mkdir('results/Sites')
+   print """
+  {re}
+  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
+  X{y}    HTTP - HTTPs - NoHttp   {re}X
+  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
+    x{r}XXXXXXXXXXXXXXXXXXXXXXXX{re}x
+    X{r} ({b} 01 {r}){y} Add HTTP        {re}X
+    X{r} ({b} 02 {r}){y} Remove HTTP(s)  {re}X
+    X{r} ({b} 03 {r}){y} Extact HTTP     {re}X
+    X{r} ({b} 69 {r}){y} Back            {re}X
+    x{r}XXXXXXXXXXXXXXXXXXXXXXXX{re}x
+  """.format(r=la7mar,y=lasfar,re=ramadi,b=lazra9)
+   mayar=raw_input('%sm4rk%s>%s'%(la7mar,ramadi,lazra9))
+   if not mayar in ['1','01','2','02','3','03','69']:
+    rakez()
+    pass
+   fiile=raw_input("%s[%s+%s] Enter list : %s"%(la7mar,la5dhar,la7mar,lazra9))
+   try:
+            yoo=open(fiile,'r').read().splitlines()
+   except:
+            print "%s{!} %s Not Founded %s"%(la7mar,fiile,labyadh)
+   
+   if mayar in ['1','01']:
+    for i in yoo:
+      if not i.startswith("http://") or i.startswith("https://"):
+        with open("results/Sites/(%s).txt"%fiile) as aaa:
+          aaa.write('http://%s\n'%i);self.fitromailon(i,'Site')
+      else:
+        with open("results/Sites/(%s).txt"%fiile,'a') as aaa:
+          aaa.write(i)
+   elif mayar in['2','02']:
+    for i in yoo:
+        try:
+          i=i.lower().replace('http://','')
+        except: 
+          pass
+        try:
+          i=i.lower().replace('https://','')
+        except: 
+          pass
+        try:
+            i=i.lower().replace('www.','')
+        except: 
+          pass
+        try:
+          i=i.lower().split('/')[0]
+        except: 
+          pass
+        with open("results/Sites/(%s).txt"%fiile,'a') as aaa:
+          aaa.write(i);self.fitromailon(i,'Site')
+   elif mayar=='3':
+    for i in yoo:
+      ororo=re.findall("http://[a-zA-Z]\w.[a-zA-Z]\w{1,8}|https://[a-zA-Z]\w.[a-zA-Z]\w{1,8}",i)
+      for xx in ororo:
+        with open("results/Sites/(%s).txt"%fiile,'a') as aaa:
+          aaa.write(xx)
+          self.fitromailon(xx,'Site')
+   elif mayar=='69':
+    heroken()
+
+
+  def logo(self):
+   print """{bl}
+  {re}x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x   {bl}
+  x{b}XXXX{g}{bl}  M4rkGc  {c}++++++++{bl}{g}  M4rkWalker  {b}XXXXXX{re}x{bl}
+  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x  {bl}
+  X{r}( {b}01 {r}){y}  Make Combo                        {re}X
+  X{r}( {b}02 {r}){y}  Remove Dupliques and spaces       {re}X
+  X{r}( {b}03 {r}){y}  Extract (Emails/users) & passwords{re}X
+  X{r}( {b}04 {r}){y}  Filtre mails                      {re}X
+  X{r}( {b}05 {r}){y}  Proxy Grabber                     {re}X
+  X{r}( {b}06 {r}){y}  Proxy Checker                     {re}X
+  X{r}( {b}07 {r}){y}  Multi Extractor(Combo/Proxy/EMail){re}X
+  X{r}( {b}08 {r}){y}  ZeroEye (Key Generator)           {re}X
+  X{r}( {b}09 {r}){y}  X-Smash (Passlist Maker & Bruter) {re}X
+  X{r}( {b}10 {r}){y}  Keyword List Maker                {re}X
+  X{r}( {b}11 {r}){y}  Grab List With `n` Lines          {re}X
+  X{r}( {b}12 {r}){y}  ccSama (CreditCard Gen++)         {re}X
+  X{r}( {b}13 {r}){y}  Username Checker                  {re}X
+  X{r}( {b}14 {r}){y}  Exchanger(user <=> email)         {re}X
+  X{r}( {b}15 {r}){y}  HTTP/HTTPS Editor                 {re}X
+  x{r}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{re}x
+  """.format(r=la7mar,b=lazra9,g=la5dhar,y=lasfar,re=ramadi,m=movv,c=cyan,bl=blid)
+
 class tepayo(object):
  def __init__(self):
     try:
@@ -2671,7 +2658,7 @@ def Follwww():
     
     print strounga("We Are   :","   + Escanor Sama (Oussama Ben Mahmoud) ~> tsuminor@gmail.com")
     print strounga("         :","   + Aron-Tn (Amir Othman) ~> Aron-tn@protonmail.com")
-    print strounga("         :","   + M4rkWalker (Z4ckarya Addala) ~> Dream0@protonmail.com")
+    print strounga("         :","   + M4rkWalker (Z4ck) ~> Dream0@protonmail.com")
     print strounga("Facebook :","   + [https://fb.com/meliodas404]")
     print strounga("         :","   + [https://fb.com/amir.othman.official]")
     print strounga("         :","   + [https://fb.com/officiel.m4rk]")
@@ -2689,22 +2676,28 @@ def mli7():
    zz=requests.get('https://raw.githubusercontent.com/0xtn/xkyuby/master/code.py')
    if update_____________A not in zz.text.encode('utf-8'):
     print "{r} Alert ! New Update For This Tool ... Bug Fixed & Some Tools Added ... \n{y}Please Contact The Coders \n{r} If You Buy This Tool From Seller You Can Receive Update (price : 2$)".format(r=la7mar,g=la5dhar,y=la7mar,re=ramadi)
-    time.sleep(3);os.remove(sys.argv[0]);os.remove(os.getcwd())
+    time.sleep(5);
  except:
             pass
+ webbrowser.open_new_tab('https://t.me/exploitn')
  print """\n{y}
-
-  d88888D  .d8b.  d8888b.  .d8b.  d8888b.  .d88b.  d888888b 
-  YP  d8' d8' `8b 88  `8D d8' `8b 88  `8D .8P  88. `~~88~~' 
-     d8'  88ooo88 88oooY' 88ooo88 88oooY' 88  d'88    88    
-    d8'   88~~~88 88~~~b. 88~~~88 88~~~b. 88 d' 88    88    #badla 
-   d8' db 88   88 88   8D 88   88 88   8D `88  d8'    88    
-  d88888P YP   YP Y8888P' YP   YP Y8888P'  `Y88P'     YP  
+   __    __  __                            __                       
+  /  |  /  |/  |                          /  |                      
+  $$ |  $$ |$$ |   __  __    __  __    __ $$ |____   __    __       
+  $$  \/$$/ $$ |  /  |/  |  /  |/  |  /  |$$      \ /  |  /  |      
+   $$  $$<  $$ |_/$$/ $$ |  $$ |$$ |  $$ |$$$$$$$  |$$ |  $$ |      
+    $$$$  \ $$   $$<  $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |      
+   $$ /$$  |$$$$$$  \ $$ \__$$ |$$ \__$$ |$$ |__$$ |$$ \__$$ |      
+  $$ |  $$ |$$ | $$  |$$    $$ |$$    $$/ $$    $$/ $$    $$ |      
+  $$/   $$/ $$/   $$/  $$$$$$$ | $$$$$$/  $$$$$$$/   $$$$$$$ |      
+                      /  \__$$ |                    /  \__$$ |      
+                    $$    $$/                     $$    $$/       
+                     $$$$$$/                       $$$$$$/          
                 {b}{time}  
         {b}*{g}--- {y}Welc0me To xkyuby {r}({y}X4priv8 V3{r}) {g}---{b}*  
-        {b}Coded By {g}+ {y}Escanor{r}({y}Oussama Ben Mahmoud{r})  
+        {b}Developed By {g}+ {y}Escanor{r}({y}Oussama Ben Mahmoud{r})  
                  {g}+ {y}ARON-TN{r}({y}Amir Othman{r})
-                 {g}+ {y}M4rkWalker{r}({y}Z4ckarya Addala{r})      
+                 {g}+ {y}M4rkWalker{r}({y}Z4ck{r})      
 {b}>{g}--- {y}We do not take any responsibility for any ilegal act {g}---{b}<""".format(time=timer(),y=fy,r=fr,b=fbl,g=fg)
  print strounga("01","Filtre Mail (+25)")+(' '*9)+strounga("02","Hash-Identify")
  print strounga("03","SMTP Sender")+(' '*15)+strounga("04","Sarahah Sender")
@@ -2822,64 +2815,7 @@ def mli7():
  elif Konoshiwa in ['00','0']:
   Follwww()
  else:
-    mli7()
-slowprint ("\n\t                       New xkyuby Tool") 
-slowprint ("\n\t        Coded By ./ARON-TN && ESCaN0r\n")
-slowprint ("                         #Tunisian_Coderz")
-
-slowprint('           Connecting .......')
-foul()
-#####################
-print("""{g}
-             ____________________________________________________
-            *                                                    *
-           |    _____________________________________________     |
-           |   |                                             |    |
-           |   |  {r}C:\ python xkyuby.py    {g}                     |    |
-           |   |        {r} * Welcome xkyuby     {g}              |    |
-           |   |        {r} ** We Are ** 
-           |   |        {r}  ARON-TN & ESCAN0R & M4rkWalker{g}  	|    |
-           |   |        {r} * Message:              {g}            |    |
-           |   |         {r}You Have Just 3Tries    {g}            |    |
-           |   |                                             |    |
-           |   |                                             |    |
-           |   |                                             |    |
-           |   |                                             |    |
-           |   | {r} c:\ shutdown              {g}                 |    |
-           |   |_____________________________________________|    |
-           |                                                      |
-            \_____________________________________________________/
-                   \_______________________________________/
-                _______________________________________________
-             _-'    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.  --- `-_
-          _-'.-.-. .---.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.  .-.-.`-_
-       _-'.-.-.-. .---.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-`__`. .-.-.-.`-_
-    _-'.-.-.-.-. .-----.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-----. .-.-.-.-.`-_
- _-'.-.-.-.-.-. .---.-. .-----------------------------. .-.---. .---.-.-.-.`-_
-:-----------------------------------------------------------------------------:
-`---._.-----------------------------------------------------------------._.---'""").format(r=fr,g=fg)
-par = raw_input("{y}Input Password to continue > {w}".format(r=fr,y=fy,w=fw));n=0
-while(par!=GenPass):
-    if n==2:
-        print("""{r}OOOOOOPPPPs
-     (_\     /_)
-       ))   ((
-     .-*******-.  
- /^\/  _.   _.  \/^\  {g}File Has Been Removed :v {r}({g}i hope that u havent a backup.zip{r})
- \(   /__\ /__\   )/  
-  \,  \o_/_\o_/  ,/   
-    \    (_)    /     
-     `-.'==='.-'
-      __) - (__   {g}If U Have Any question contact Us{r}
-     /  `~~~`  \  {g}Escanor : {y}tsuminor@gmail.com{r}
-    / ,       , \ {g}Aron-TN : {y}Aron-tn@protonmail.com{r}
-    \ :       ; /
-     \|==(*)==|/
-      :       :
-       \  |  /
-     ___)=|=(___
-    (____/ \____)""".format(r=fr,g=fg,y=fy));webbrowser.open_new_tab('https://t.me/exploitn')
-    n+=1;par=raw_input("{r}Password wrong {n}\n{y}Input Password to continue > {w}".format(r=fr,y=fy,w=fw,n=n))
+    mli7
 try:
  mli7()
 except KeyboardInterrupt:
