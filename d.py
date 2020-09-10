@@ -2680,6 +2680,7 @@ def mli7():
  except:
             pass
  webbrowser.open_new_tab('https://t.me/exploitn')
+ foul()
  print """\n{y}
    __    __  __                            __                       
   /  |  /  |/  |                          /  |                      
